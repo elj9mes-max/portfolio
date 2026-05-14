@@ -3,9 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('portfolio');
+    return view('portfolio', [
+        "name" => "Eljames Benitez",
+        "title" => "Full Stack Developer"
+
+    ]);
 });
 
-Route::get('/pho', function () {
-    return view('https://github.com/elj9mes-max/oilMonitoring"');
-});

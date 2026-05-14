@@ -474,18 +474,20 @@
     <nav class="nav">
         <a href="#home" class="nav-logo">EB.</a>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li><x-nav-link href="#about">About</x-nav-link></li>
+            <li><x-nav-link href="#experience">Experience</x-nav-link></li>
+            <li><x-nav-link href="#projects">Projects</x-nav-link></li>
+            <li><x-nav-link href="#contact">Contact</x-nav-link></li>
+
         </ul>
     </nav>
 
     {{-- Hero --}}
     <section class="hero" id="home">
         <p class="hero-greeting">Hello, World 👋</p>
-        <h1 class="hero-name">Eljames Benitez</h1>
-        <p class="hero-role">Full Stack Developer</p>
+        <h1 class="hero-name">{{ $name }}</h1>
+        <p class="hero-role">{{ $title }}</p>
         <p class="hero-bio">
             I craft clean, performant web applications using modern tools and frameworks.
             Passionate about building experiences that are fast, accessible, and beautiful.
